@@ -25,6 +25,14 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        /*
+        CREATE TABLE tbl_destinasi (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nama VARCHAR(50),
+            alamat TEXT,
+            jam VARCHAR(30)
+        );
+         */
         String query = "CREATE TABLE " + TABLE_NAME + " (" +
                 FIELD_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 FIELD_NAMA + " VARCHAR(50), " +
@@ -53,6 +61,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         long eksekusi = db.insert(TABLE_NAME, null, cv);
         return eksekusi;
     }
+
     public Cursor bacaDataDestinasi(){
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT * FROM " + TABLE_NAME;

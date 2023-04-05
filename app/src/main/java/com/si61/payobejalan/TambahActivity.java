@@ -1,7 +1,6 @@
 package com.si61.payobejalan;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,10 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 public class TambahActivity extends AppCompatActivity {
-
     private EditText etNama, etAlamat, etJam;
     private Button btnTambah;
 

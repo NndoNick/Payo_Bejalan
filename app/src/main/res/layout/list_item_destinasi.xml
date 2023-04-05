@@ -11,6 +11,14 @@
         android:padding="6dp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/tv_nama"
@@ -30,8 +38,7 @@
             android:id="@+id/tv_jam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jam" />
-
+            android:text="Jam"/>
 
     </LinearLayout>
 
